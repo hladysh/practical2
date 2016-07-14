@@ -1,0 +1,131 @@
+/*.container {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    text-align: center;*/
+/*}*/
+    td select,
+    td input {
+      width: 150px;
+    }
+
+    label {
+      display: block;
+    }
+
+    .error input,
+    .error textarea {
+      border: 1px solid red;
+    }
+
+    .error {
+      color: red;
+    }
+    textarea {
+        resize: none; 
+    }
+   .number_list {
+     display: none;
+   }
+   .type_of_list {
+     display: none;
+   }
+   .btn_save_list {
+     display: none;
+   }
+   /*.list_content_content {*/
+   /*  display: none;*/
+   /*}*/
+   /*#mySelect {*/
+   /*  display: none;*/
+   /*}*/
+   
+   .container {
+     
+   }
+   
+   .pop_ap {
+     width: 300px;
+     height: 250px;
+    border: 2px solid green;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9999;
+    display: none;
+ 
+      background-color: #c5c5c5;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+    /*opacity: 1;*/
+   }
+   .wrap_input {
+     position: relative;
+          width: 300px;
+     height: 250px
+   }
+   .wrap_input h2 {
+     text-align: center;
+    line-height: 16px;
+    margin: 10px;
+    padding: 10px;
+   }
+   .wrap_input h4 {
+    top: 57%;
+    position: relative;
+      text-align: center;
+      color: red;
+     text-transform: uppercase; 
+   }
+   #input_password {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 8%;
+    width: 66%;
+    margin: -16% 0 0 -32%;
+    border: 2px solid green;
+   }
+   .alert_wrong {
+     display: none;
+   }
+   /*.window_wrap {*/
+   /*  background-color: #333;*/
+     /*display: none;*/
+     /*z-index: 999;*/
+     /*opacity: 0.3;*/
+   /*  width: 100%;*/
+   /*  height: 100%;*/
+   /*  position: absolute;*/
+   /*}*/
+   /*.window_wrap {*/
+   /*  width: 100%;*/
+   /*  height: 100%;*/
+   /*  background-color: #333;*/
+   /*  position: relative;*/
+   /*  min-height: 100%;*/
+   /*  min-width: 100%;*/
+   /*}*/
+   
+   .wrap_popap {
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+    display: none;
+   }
+   .btn_unlock {
+    position: absolute;
+    bottom: 34%;
+    left: 37%;
+    padding: 7px 14px;
+    text-transform: uppercase;
+    border-radius: 9px;
+    border: 2px solid blue;
+    background-color: #36ab62;
+    cursor: pointer;
+   }
