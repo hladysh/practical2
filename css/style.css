@@ -1,51 +1,80 @@
-/*.container {*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    text-align: center;*/
-/*}*/
-    td select,
-    td input {
-      width: 150px;
-    }
+tr {
+    height: 40px;
+    margin-left: 0 10px;
+    position: relative;
+}
 
-    label {
-      display: block;
-    }
+td {
+    left: 25px;
+    position: relative;
+}
 
-    .error input,
-    .error textarea {
-      border: 1px solid red;
-    }
+td select,
+td input {
+    width: 140px;
+    border: 2px blue solid;
+    height: 24px;
+    font-size: 18px;
+}
 
-    .error {
-      color: red;
-    }
-    textarea {
-        resize: none; 
-    }
-   .number_list {
-     display: none;
-   }
-   .type_of_list {
-     display: none;
-   }
-   .btn_save_list {
-     display: none;
-   }
-   /*.list_content_content {*/
-   /*  display: none;*/
-   /*}*/
-   /*#mySelect {*/
-   /*  display: none;*/
-   /*}*/
-   
-   .container {
-     
-   }
-   
-   .pop_ap {
-     width: 300px;
-     height: 250px;
+label {
+    display: block;
+}
+
+.error input,
+.error textarea {
+    border: 1px solid red;
+}
+
+.error {
+    color: red;
+}
+
+textarea {
+    resize: none;
+    border: 1px blue solid;
+    margin: 0 auto;
+}
+
+button {
+    border-radius: 5px;
+    color: #fff;
+    background-color: #00ff78;
+    padding: 6px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.form_wrap {
+    width: 700px;
+    height: 900px;
+    border: 1px solid red;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.window_wrap {
+    padding: 15px;
+}
+
+.container {
+    min-height: 370px;
+    border: 2px solid green;
+}
+
+.number_list,
+.btn_save_list,
+.type_of_list,
+.type_list,
+.type_list_ul,
+.type_list_ol,
+.alert_wrong {
+    display: none;
+}
+
+.pop_ap {
+    width: 300px;
+    height: 250px;
     border: 2px solid green;
     position: fixed;
     top: 0;
@@ -55,31 +84,33 @@
     margin: auto;
     z-index: 9999;
     display: none;
- 
-      background-color: #c5c5c5;
-    border-radius:5px;
+    background-color: #c5c5c5;
+    border-radius: 5px;
     box-shadow: 0px 0px 10px #000;
-    /*opacity: 1;*/
-   }
-   .wrap_input {
-     position: relative;
-          width: 300px;
-     height: 250px
-   }
-   .wrap_input h2 {
-     text-align: center;
+}
+
+.wrap_input {
+    position: relative;
+    width: 300px;
+    height: 250px
+}
+
+.wrap_input h2 {
+    text-align: center;
     line-height: 16px;
     margin: 10px;
     padding: 10px;
-   }
-   .wrap_input h4 {
+}
+
+.wrap_input h4 {
     top: 57%;
     position: relative;
-      text-align: center;
-      color: red;
-     text-transform: uppercase; 
-   }
-   #input_password {
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+}
+
+#input_password {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -87,38 +118,20 @@
     width: 66%;
     margin: -16% 0 0 -32%;
     border: 2px solid green;
-   }
-   .alert_wrong {
-     display: none;
-   }
-   /*.window_wrap {*/
-   /*  background-color: #333;*/
-     /*display: none;*/
-     /*z-index: 999;*/
-     /*opacity: 0.3;*/
-   /*  width: 100%;*/
-   /*  height: 100%;*/
-   /*  position: absolute;*/
-   /*}*/
-   /*.window_wrap {*/
-   /*  width: 100%;*/
-   /*  height: 100%;*/
-   /*  background-color: #333;*/
-   /*  position: relative;*/
-   /*  min-height: 100%;*/
-   /*  min-width: 100%;*/
-   /*}*/
-   
-   .wrap_popap {
-    width:100%;
-    min-height:100%;
-    background-color: rgba(0,0,0,0.5);
-    overflow:hidden;
-    position:fixed;
-    top:0px;
+}
+
+.wrap_popap {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0;
     display: none;
-   }
-   .btn_unlock {
+}
+
+.btn_unlock {
     position: absolute;
     bottom: 34%;
     left: 37%;
@@ -128,4 +141,47 @@
     border: 2px solid blue;
     background-color: #36ab62;
     cursor: pointer;
-   }
+}
+
+.btn_validate {
+    top: 20px;
+    right: -36%;
+    position: relative;
+}
+
+.btn_password_open,
+.btn_password_open2 {
+    background-color: #0054ff;
+    padding: 2px;
+    font-size: 12px;
+    text-transform: lowercase;
+}
+
+.btn_block {
+    position: fixed;
+    left: 5%;
+    top: 14%;
+    padding: 12px;
+    font-size: 25px;
+    background-color: #ff0011;
+}
+
+.btn_block:hover {
+    background-color: #ad0023;
+}
+
+.btn_list_add {
+    position: relative;left: 40%;
+    margin-top: 29px;
+}
+
+.window {
+    position: absolute;
+    right: 16%;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+input#number_list {
+    margin: 15px 0;
+}

@@ -1,121 +1,129 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
-         <meta charset="utf-8">
-        <title> Practical 2 </title>
-        <link rel="stylesheet" href="css/style.css" type="text/css" />
-    </head>
-    <body>
-        
-  
- <div class="window_wrap">      
-       
-        
-        
-        <div class="container">
-<form action="#" name="form_validate">
-    <table>
-      <tr>
-        <td>Імя</td>
-        <td>
-          <input name="from" type="text">
-        </td>
-      </tr>
-      <tr>
-        <td>Введіть пароль  <button class="btn_password_open"> Паказати пароль</button></td>
-       
-        <td>
-          <input name="password" type="password">
-        </td>
-      </tr>
-      <tr>
-        <td>Повторіть пароль <button class="btn_password_open2"> Паказати пароль</button></td>
-        <td>
-          <input name="password2" type="password">
-        </td>
-      </tr>
-      <tr>
-        <td>Куди відправити</td>
-        <td>
-          <select name="to">
+<head>
+  <meta charset="utf-8">
+  <title> Practical 2 </title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+  <div class="form_wrap">
+
+    <div class="window_wrap">
+      <div class="container">
+        <form action="#" name="form_validate">
+          <table>
+            <tr>
+              <td>Імя</td>
+              <td>
+                <input name="from" type="text">
+              </td>
+            </tr>
+            <tr>
+              <td>Введіть пароль <button class="btn_password_open"> Паказати пароль</button> </td>
+              <td>
+                <input name="password" type="password">
+              </td>
+            </tr>
+            <tr>
+              <td>Повторіть пароль <button class="btn_password_open2"> Паказати пароль</button></td>
+              <td>
+                <input name="password2" type="password">
+              </td>
+            </tr>
+            <tr>
+              <td>Куди відправити</td>
+              <td>
+                <select name="to">
             <option></option>
             <option value="1">Львів</option>
             <option value="2">Київ</option>
             <option value="3">Одеса</option>
           </select>
-        </td>
-      </tr>
-    </table>
+              </td>
+            </tr>
+            <td> Введіть ваше повідомлення:</td>
+          </table>
 
-    Введіть ваше повідомлення:
-    <label>
+
+          <label>
       <textarea name="message" style="display:block;width:400px;height:80px"></textarea>
     </label>
-     <button class="btn_validate">Перевірити</button>
- 
-  </form>
+          <button class="btn_validate">Перевірити</button>
 
-        
-       
-        <!--<button class="btn_list_add">Додати список</button>-->
-    
-        
-        <div class="list_content">
-            
-                <form action="#" name="list_content_content">
-            <div class="list_content_content">  
+        </form>
+
+      </div>
+
+      <button class="btn_list_add">Додати список</button>
+
+      <div class="list_content">
+
+        <form action="#" name="list_content">
+
+          <div class="type_list">
             <p>Який тип списку ви бажаєте додати?</p>
-                    <select name="type_list" id="mySelect" >
+            <select name="type_list" id="type_list">
                         <option value="">Виберіть значення :
                         <option value="ul">Unordered list
                         <option value="ol">ordered list
                     </select><br>
-            </div>    
-                  <div class="number_list"> 
-                    <p>Введіть кількість елементів списку </p>
-                    <input type="text" size="5" name="numli" value="10" id="mySelect2"><br>
-                 </div>    
-                 <div class="type_of_list">
-                    <p>Маркування спику</p>
-                    <select name="type_list_style" id="type_list_style">
-                        <option value="disc ">disc</option> 
-                        <option value="circle">circle</option>
-                        <option value="square">square</option>
-                    </select> <br>
-                 </div>  
-                 
-                    <button class="btn_save_list">Додати список</button>
-                </form>
-            </div>
+          </div>
 
-        <button class="btn_block"> Блокувати</button>
-        <div class="wrap_popap">
-            <div class="pop_ap">
-                  
-                <div class="wrap_input">
-                        <h2>Введіть пароль</h2>
-                    <form action="#" name="user_password"> 
-                        <input type="password" id="input_password" name="input_passwords">
-                    </form>
-                    <button class="btn_unlock">Увійти</button>
-                    
-                    <h4 class="alert_wrong"> неправильний пароль!</h4>
-                    
-                </div>
-            </div>
+          <div class="type_list_ul">
+            <p>Маркування спику</p>
+            <select name="type_list_ul" id="type_list_ul">
+                        <option value="" >виберіть значення
+                        <option value="square">square
+                        <option value="disc">disc
+                        <option value="circle">circle
+                        
+            </select> <br>
+          </div>
+
+          <div class="type_list_ol">
+            <select name="type_list_ol" id="type_list_ol">
+              <option value="1">1. 2. 3.. 
+              <option value="a"> A, B, C..
+              <option value="I">I, II, III.
+              
+            </select> <br>
+          </div>
+
+          <div class="number_list">
+            <p>Введіть кількість елементів списку </p>
+            <input type="text" size="5" name="numli" value="10" id="number_list"><br>
+          </div>
+
+
+          <button class="btn_save_list">Додати список</button>
+        </form>
+      </div>
+
+      <button class="btn_block"> Блокувати</button>
+      <div class="wrap_popap">
+        <div class="pop_ap">
+
+          <div class="wrap_input">
+            <h2>Введіть пароль</h2>
+            <form action="#" name="user_password">
+              <input type="password" id="input_password" name="input_passwords">
+            </form>
+            <button class="btn_unlock">Увійти</button>
+
+            <h4 class="alert_wrong"> Неправильний пароль!</h4>
+
+          </div>
         </div>
-    
-        
-        
-        <div class="window">
-            
-        </div>
-        <div id="demo"></div>
-     
-       </div>  
-  
+      </div>
+      <!--<div class="window">-->
+
+      <!--</div>-->
+      <!--<div id="demo"></div>-->
+    </div>
   </div>
-        
-     <script src="js/script.js"></script>
-    </body>
+
+  <script src="js/script.js"></script>
+</body>
+
 </html>
